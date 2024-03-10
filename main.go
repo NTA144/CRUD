@@ -47,7 +47,7 @@ func excluirLivro(w http.ResponseWriter, r *http.Request){
 	partes := strings.Split(r.URL.Path, "/")
 
 	id, err := strconv.Atoi(partes[2]); if err !=nil{
-		//erro
+		//erros
 	}
 	indiceLivro:=-1
 	for indice, livro:= range Livros{
